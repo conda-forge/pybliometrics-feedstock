@@ -1,5 +1,5 @@
 {% set name = "pybliometrics" %}
-{% set version = "4.2" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pybliometrics-{{ version }}.tar.gz
-  sha256: ed09b740637b84605922780d46086d5999ad06f3a37a6c9d6d3c04ffb8f55efe
+  sha256: 659f6c29c2c5a4991ebdb5d35782df17f952739cf608ebe77ced3dc8922022f2
 
 build:
   noarch: python

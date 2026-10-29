@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: pybliometrics
-  version: "4.4.1"
+  version: "4.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/pybliometrics-${{ version }}.tar.gz
-  sha256: b7d1e1687aadbdba4a1075c2bfb5b3fc06842d2b5ca58a1c215116ad639bb17d
+  sha256: 357e54edb3d1bf9dbae6d3c33c1a1e574c1a496fa2b9886d32503bad6d1459bb
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
